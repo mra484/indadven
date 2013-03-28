@@ -1,6 +1,6 @@
 
 public class Adventurer extends Character{
-	 public Adventurer(Cave intiLoc){
+	 public Adventurer(Cave initLoc){
 		 super(initLoc);
 		 
 		 
