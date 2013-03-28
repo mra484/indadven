@@ -1,18 +1,21 @@
 
 public class Cave {
+	public static enum CaveType { OPEN, BLOCKED, PIT, TELEPORT;
 	
+	}
+		
 	public Cave(int r, int c){
 		
 	}
 	
 	public int getRow(){
 		
-		return ;
+		return 0;
 	}
 	
 	public int getCol(){
 		
-		return ;
+		return 0;
 	}
 	
 	public void setOccupied(boolean set){

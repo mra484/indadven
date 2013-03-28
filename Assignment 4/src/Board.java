@@ -7,9 +7,9 @@ public class Board {
 	}
 	
 	public Cave getCave(int r, int c){
+		Cave tempCave = new Cave(r, c);
 		
-		
-		return Cave;
+		return tempCave;
 	}
 	
 	public boolean ok(int r, int c){
@@ -19,8 +19,9 @@ public class Board {
 	}
 	
 	public Cave getUnoccupiedOpenLocation(){
+		Cave tempCave = new Cave(1,1);
 		
-		return Cave;
+		return tempCave;
 	}
 	
 	

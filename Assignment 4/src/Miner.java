@@ -6,6 +6,12 @@ public class Miner extends Character {
 		
 	}
 	
+	public boolean modifyCave(Cave loc){
+		
+		
+		return false;
+	}
+	
 	public String describeModification(){
 		
 		

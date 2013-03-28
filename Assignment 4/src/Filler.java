@@ -1,15 +1,24 @@
-public class Filler extends Character {
+public class Filler extends Character{
 	
 	public Filler(Cave initLoc){
+		super(initLoc);
 	//Attempt to modify the cave at the given location. Fillers modify a cave by filling in a pit.
 		
 		
-		return true;
+		
+	}
+	
+	public boolean modifyCave(Cave loc){
+		
+		
+		
+		return false;
 	}
 	
 	public String describeModification(){
 		
 	
+		return "PH";
 	}
 
 	public boolean move(Cave to){
@@ -20,10 +29,16 @@ public class Filler extends Character {
 	
 	//Returns:
 		//True if the Filler can move in this new spot, false otherwise.	
+		
+		
+		return false;
 	}
 	
 	public String getName(){
 		
+		
+		
+		return "PH";
 	}
 		
 	

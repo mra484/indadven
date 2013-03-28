@@ -6,11 +6,20 @@ public abstract class Character implements CaveWorker {
 	protected Cave location;
 	//The Cave that this character is occupying.
 	
-	public Character(Cave initLoc);
+	public Character(Cave initLoc){
 	//Construct a new character at the initial location. Marks this location as occupied.
 	
-	public Cave getLocation();
+	}
+		
+	public Cave getLocation(){
 	//Get the Cave this character is occupying.
+		Cave tempCave = new Cave(1,1);
+		
+		
+		return tempCave;
+	}
+	
+	
 	
 	public boolean move(Cave to){
 	//Move this character from his/her current location to the new location. Marks the old spot 
