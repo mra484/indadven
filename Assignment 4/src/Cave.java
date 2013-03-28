@@ -1,20 +1,6 @@
 
 public class Cave {
 	
-//	public static enum Cave.CaveType extends Enum<cave.CaveType>{
-//		
-//		public static final Cave.CaveType OPEN;
-//		public static final Cave.CaveType BLOCKED;
-//		public static final Cave.CaveType PIT;
-//		public static final Cave.CaveType TELEPORT;
-//		
-//		public static Cave.CaveType() values();
-//		
-//		public static Cave.CaveType valueOf(String name);
-//		
-//		
-//	}
-	
 	public Cave(int r, int c){
 		
 	}
