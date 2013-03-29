@@ -1,5 +1,7 @@
 
 public class Adventurer extends Character{
+	private String name = "Adventurer";
+	
 	 public Adventurer(Cave initLoc){
 		 super(initLoc);
 		 
@@ -7,8 +9,10 @@ public class Adventurer extends Character{
 	 }
 	 
 	 public boolean modifyCave(Cave loc){
-		 
-		 
+		 if( loc.isTeleport() ){
+			 loc.setMarked(true);
+			 return true;
+		 }
 		 return false;
 	 }
 	 
@@ -16,11 +20,14 @@ public class Adventurer extends Character{
 	 public String describeModification(){
 		 
 		 
-		 return "PH";
+		 return String.format("%s discovered and marked a teleporter!", name);
 	 }
 	 
 	 public boolean move(Cave to){
-		 
+		 if( !(to.isOccupied()) && !(to.isBlocked()) ){
+			 location = to;
+			 return true;
+		 }
 		 
 		 return false;
 	 }
@@ -29,6 +36,6 @@ public class Adventurer extends Character{
 	 public String getName(){
 		 
 		 
-		 return "PH";
+		 return name;
 	 }
 }
