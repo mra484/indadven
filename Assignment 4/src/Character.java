@@ -1,3 +1,6 @@
+/*Class for managing the location and movement of characters
+ */
+
 public abstract class Character implements CaveWorker {
 	
 	

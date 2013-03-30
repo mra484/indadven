@@ -10,7 +10,6 @@ public class Miner extends Character {
 	
 	public boolean modifyCave(Cave loc){
 		if( loc.isBlocked() ){
-			 loc.setMarked(true);
 			 loc.makeOpen();
 			 return true;
 		 }
@@ -26,7 +25,7 @@ public class Miner extends Character {
 	
 	public boolean move(Cave to){
 		 if( !(to.isOccupied()) ){
-			 location = to;
+			 super.move(to);
 			 return true;
 		 }
 		

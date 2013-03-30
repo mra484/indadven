@@ -11,7 +11,6 @@ public class Filler extends Character{
 	
 	public boolean modifyCave(Cave loc){
 		if( loc.isPit() ){
-			 loc.setMarked(true);
 			 loc.makeOpen();
 			 return true;
 			 
@@ -33,7 +32,7 @@ public class Filler extends Character{
 	//method in the super class (which actually performs the move). If not, simply return false.	
 		
 		 if( !(to.isOccupied()) && !(to.isBlocked()) ){
-			 location = to;
+			 super.move(to);
 			 return true;
 		 }
 		 

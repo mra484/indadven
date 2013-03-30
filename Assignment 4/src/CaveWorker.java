@@ -1,3 +1,6 @@
+/*Interface for giving characters the ability to make modifications to the cave
+ */
+
 public interface CaveWorker {
 
 	//Method making modifications to a given cave if this worker can modify this type of cave.
