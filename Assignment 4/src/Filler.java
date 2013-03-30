@@ -1,4 +1,5 @@
 public class Filler extends Character{
+	private String name = "Filler";
 	
 	public Filler(Cave initLoc){
 		super(initLoc);
@@ -9,16 +10,21 @@ public class Filler extends Character{
 	}
 	
 	public boolean modifyCave(Cave loc){
+		if( loc.isPit() ){
+			 loc.setMarked(true);
+			 loc.makeOpen();
+			 return true;
+			 
+		 }
 		
-		
-		
+			
 		return false;
 	}
 	
 	public String describeModification(){
 		
 	
-		return "PH";
+		return String.format("%s it was a pit, it was filled in", name);
 	}
 
 	public boolean move(Cave to){
@@ -26,19 +32,27 @@ public class Filler extends Character{
 	//Filler can actually move to this new location. If so, it should make a call to the move 
 	//method in the super class (which actually performs the move). If not, simply return false.	
 		
+		 if( !(to.isOccupied()) && !(to.isBlocked()) ){
+			 location = to;
+			 return true;
+		 }
+		 
+		 return false;
+		
 	
 	//Returns:
 		//True if the Filler can move in this new spot, false otherwise.	
 		
 		
-		return false;
+		
 	}
 	
 	public String getName(){
 		
 		
 		
-		return "PH";
+		
+		return name;
 	}
 		
 	

@@ -16,7 +16,8 @@ public class Board {
 			{
 				map[x][y] = new Cave(x,y);
 			}
-		}		
+		}
+		
 	}
 	
 	public Cave getCave(int r, int c){

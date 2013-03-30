@@ -1,2 +1,10 @@
-/test.class
+/AdventureGame$ImageLabel.class
+/AdventureGame.class
+/Adventurer.class
+/Board.class
 /Cave$CaveType.class
+/Cave.class
+/CaveWorker.class
+/Character.class
+/Filler.class
+/Miner.class
