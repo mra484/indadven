@@ -35,11 +35,12 @@ public class Cave {
 		} else
 			state = (random <= pitRate ? CaveType.PIT : CaveType.TELEPORT);	
 		
-		//makes sure that adventurer's initial position is open and occupied
+		//makes sure that adventurer's initial position is open and occupied and the treasure's position is open
 		if( row == 0 && col == 0){
 			state = CaveType.OPEN;
 			occupied = true;
-		}
+		} else if ( row == 9 && col == 9)
+			state = CaveType.OPEN;
 		
 		
 		
