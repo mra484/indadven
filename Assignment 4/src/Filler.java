@@ -1,3 +1,6 @@
+//Gregory Young
+//COP 3330 0001
+
 public class Filler extends Character{
 	private String name = "Filler";
 	

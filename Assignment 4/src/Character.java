@@ -1,3 +1,6 @@
+//Gregory Young
+//COP 3330 0001
+
 /*Class for managing the location and movement of characters
  */
 

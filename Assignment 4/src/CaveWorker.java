@@ -1,3 +1,8 @@
+//Gregory Young
+//COP 3330 0001
+//CaveWorker Class
+
+
 /*Interface for giving characters the ability to make modifications to the cave
  */
 
